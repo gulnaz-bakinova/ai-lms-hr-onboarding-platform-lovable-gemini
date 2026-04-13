@@ -50,7 +50,7 @@ Previously, all theory was explained offline by managers individually for each n
 |---|---|
 | **Candidate** | Values test and candidate profile creation only — nothing else is visible |
 | **Barista (Intern)** | Full LMS access (all courses, leaderboard, own profile) — learning only, with a default 1-month access period aligned with the course duration |
-| **External Trainee** | One course only (Product Theory), own results, auto-expires in 7 days |
+| **External Learner** | One course only (Product Theory), own results, auto-expires in 7 days |
 | **Admin** | Everything: content management, employee management, AI reports, candidate portal, analytics, prompt editor |
 
 ---
@@ -172,7 +172,7 @@ Most visited pages: `/learn` (292), `/` (288), `/leaderboard` (144), `/admin` (9
 | Courses | 3 (55+ lessons) |
 | AI-graded exams | Multiple per employee |
 | Candidate profiles generated | 18 |
-| External trainees | 20 |
+| External Learner | 20 |
 | Locations served | 4 (Almaty, KZ) |
 | Status | Production (ongoing support) |
 
