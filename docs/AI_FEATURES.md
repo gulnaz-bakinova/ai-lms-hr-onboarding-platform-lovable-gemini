@@ -17,6 +17,11 @@ Used in open-ended exams during training.
 - Returns a score, missed points, and improvement guidance
 - Detects whether the answer is written in Russian or Kazakh and responds in the same language
 - Checks plagiarism against the reference answer; responses with more than 70% similarity are rejected
+- Edge Function: check-answer
+- Edge Function: check-recipe-description 
+
+**Edge Functions:**  
+`check-answer` handles all open-ended exam questions. `check-recipe-description` runs separately for recipe-related answers, where evaluation criteria differ from theory questions.
 
 **Exam rules:**
 - Minimum 300 characters required
@@ -41,6 +46,11 @@ Generated automatically after completion of the 25-question assessment test.
 - Behavioral patterns
 - Self-assessment
 - Work attitude and motivation signals
+- Edge Function: generate-candidate-report
+- Edge Function: enrich-candidate-report
+
+**Edge Functions:**  
+`generate-candidate-report` triggers automatically on test completion and builds the full psychometric portrait. `enrich-candidate-report` runs as a second pass — it deepens the analysis with SWOT, interview questions, and adaptation recommendations.
 
 **Output includes:**
 - Primary and secondary archetype (Operator / Master / Mentor / Architect)
@@ -84,6 +94,9 @@ Generated manually by admin for any employee at any point in the process.
 - Weak topics and weak drinks
 - Overall learning consistency
 
+**Edge Functions:**  
+`generate-employee-report` is triggered manually by admin for any employee. It reads the full learning history from the database — lesson completion, quiz scores, exam attempts and AI feedback — and returns a structured report in a single call.
+
 **Output includes:**
 - Overall assessment
 - Strengths
@@ -105,6 +118,9 @@ Built into the employee profile.
 - Answers questions about company rules, culture, and internal processes
 - Uses an admin-uploaded `.docx` knowledge base
 - Shows configurable quick question suggestions
+
+**Edge Functions:**  
+`parse-knowledge-base` runs when admin uploads a new `.docx` file — it parses and indexes the content for search. `chatbot` handles every employee question in real time, querying the indexed knowledge base and returning a contextual answer.
 
 **Why it matters:**
 It reduces repetitive manager explanations and gives employees a self-serve way to clarify company information.
