@@ -1,4 +1,4 @@
-# 🎓 AI-Powered LMS for Coffee Shop Staff Onboarding
+# 🎓 AI-Powered LMS for Coffee Business Onboarding
 
 > Live in production at **Seventy Company** — a 4-location coffee shop chain in Almaty, Kazakhstan.  
 > An AI-powered LMS for staff onboarding, built with Lovable and Gemini.  
