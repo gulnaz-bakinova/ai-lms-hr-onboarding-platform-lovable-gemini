@@ -27,6 +27,12 @@ Receives an access link before being hired. Cannot see the LMS.
 - See any other part of the app
 - Re-entry with the same phone number is blocked after 4 hours from registration — prevents sharing test content with other candidates
 
+**Session timer:**
+- The assessment test must be completed within a **2-hour window** from the moment the session starts
+- If time runs out before the test is finished, the attempt is saved as **Incomplete** (`is_complete: false`)
+- The result screen shows partial progress (e.g. "Answered 5 of 25") — no AI Portrait is generated
+- Admin can reset the session manually via the ↻ button and issue a new link
+
 On test completion, an AI Portrait is generated automatically and becomes visible to admin.  
 Admin reviews the portrait and decides whether to grant intern access.
 
@@ -47,6 +53,12 @@ Standard role for all staff going through onboarding.
 - Access admin panel
 - View other employees' exam answers or AI reports
 - Manage content or users
+
+**Exam timer:**
+- Each open-ended exam question has a countdown timer
+- If the timer runs out before the answer is submitted, the exam is force-completed with a result of **0%**
+- The result screen is shown immediately with a score of 0%, and this attempt counts toward the **daily attempt limit**
+- The timer does not pause — an expired timer is treated as a failed attempt, not a skipped one
 
 ---
 
