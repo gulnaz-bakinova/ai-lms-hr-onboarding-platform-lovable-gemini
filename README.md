@@ -134,12 +134,12 @@ See [`prompts/ai_examiner_example.md`](./prompts/ai_examiner_example.md) for a p
 
 ## Business Impact
 
-Before this system, onboarding at Seventy Company was fully manual:
+**Before this system, onboarding at Seventy Company was fully manual:**
 - Theory was explained offline by managers, individually for every new hire
 - There was no reliable way to verify knowledge retention before moving to hands-on practice
 - Assessing employee potential and deciding on role fit required trial and error
 
-Now:
+**Now:**
 - Interns arrive at practical training with verified theoretical knowledge
 - Management sees exactly where each person struggled and what they know well
 - Hiring and promotion decisions are backed by AI-generated psychometric data, not gut feeling
