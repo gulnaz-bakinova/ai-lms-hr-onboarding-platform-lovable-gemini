@@ -25,7 +25,7 @@ Receives an access link before being hired. Cannot see the LMS.
 - Access any courses, lessons, or exams
 - See the leaderboard or other profiles
 - See any other part of the app
-- Re-entry with the same phone number is blocked after 4 hours from registration — prevents sharing test content with other candidates
+- Re-entry with the same phone number is blocked after 2 hours from registration — prevents sharing test content with other candidates
 
 **Session timer:**
 - The assessment test must be completed within a **2-hour window** from the moment the session starts
