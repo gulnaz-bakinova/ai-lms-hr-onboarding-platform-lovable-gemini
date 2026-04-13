@@ -102,6 +102,7 @@ Previously, all theory was explained offline by managers individually for each n
 - XP system, levels, streak tracking
 - Leaderboard visible to all employees
 - Achievements/badges (Encyclopedia, Speed Runner, Polyglot, etc.)
+- Mastery Path — 5 progression levels tied to course completion (Green Bean → Tamper → Holder → Master → Espresso God)
 
 ### 💬 AI HR Chatbot
 - Available in employee profile
