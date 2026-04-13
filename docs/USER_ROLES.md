@@ -49,6 +49,18 @@ Standard role for all staff going through onboarding.
 - View the leaderboard
 - Use the AI HR Chatbot
 
+**Mastery Path:**
+
+Progress through 5 levels as courses are completed:
+
+| Level | Title | Unlocked by |
+|---|---|---|
+| 1 | Green Bean | Starting point — access granted |
+| 2 | Tamper | Complete Company Rules course |
+| 3 | Holder | Complete Product Theory course |
+| 4 | Master | Complete Recipes course |
+| 5 | Espresso God | All courses completed |
+
 **Cannot:**
 - Access admin panel
 - View other employees' exam answers or AI reports
