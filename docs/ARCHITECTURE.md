@@ -43,7 +43,7 @@ The system is a single-product web application built entirely on Lovable (React 
 
 | Role | Access scope | Expiry |
 |---|---|---|
-| Candidate | 25-question assessment test only | Until admin grants intern access |
+| Candidate | 25-question assessment test only | 4 hours after registration — access revoked automatically to prevent test content sharing |
 | Barista (Intern) | Full LMS | 1 month (default, configurable) |
 | External Learner | 1 course only (Product Theory) | 7 days (auto-expires) |
 | Admin | Everything | No expiry |
