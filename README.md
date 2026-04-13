@@ -4,7 +4,10 @@
 > An AI-powered LMS for staff onboarding, built with Lovable and Gemini.  
 > **22 employees trained**, including current baristas, new hires, and management candidates.
 
-🔗 **Live app:** [seventycompany.lovable.app](https://seventycompany.lovable.app)
+![Lovable](https://img.shields.io/badge/Lovable-Built%20with%20Lovable-7C3AED?style=flat)
+![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4?style=flat&logo=google)
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Production-22c55e?style=flat)
 
 ---
 
