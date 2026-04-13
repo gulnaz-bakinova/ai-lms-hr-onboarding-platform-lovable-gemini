@@ -4,7 +4,7 @@
 > An AI-powered LMS for staff onboarding, built with Lovable and Gemini.  
 > **22 employees trained**, including current baristas, new hires, and management candidates.
 
-🔗 **Live app:** <a href="https://seventycompany.lovable.app" target="_blank">seventycompany.lovable.app</a>
+🔗 **Live app:** [seventycompany.lovable.app](https://seventycompany.lovable.app)
 
 ---
 
@@ -66,7 +66,7 @@ Previously, all theory was explained offline by managers individually for each n
 - Open-ended exam questions graded by Gemini
 - Minimum 300 characters required; paste disabled to prevent copying
 - AI provides instant feedback: score + what was missed + what to improve
-- **Bilingual support**: students can write in Russian or Kazakh (or both); AI detects the language and responds in the same language
+- Bilingual support: students can write in Russian or Kazakh (or both); AI detects the language and responds in the same language
 - Up to 3 attempts per exam; after 3 failed attempts, a 24-hour cooldown is applied — encourages students to go back and review the theory before retrying
 - Full history saved for reviewing mistakes: student answer + AI feedback — visible to both student and admin
 
@@ -109,7 +109,7 @@ Previously, all theory was explained offline by managers individually for each n
 ### 🛠 Admin Panel
 - Full content management: courses, modules, lessons, quizzes
 - Employee management: progress, exam history, XP, access control
-- **Configurable AI model per module**: admin can switch Gemini model (e.g. Flash / Pro) for each AI feature independently — balancing cost and accuracy
+- Configurable AI model per module: admin can switch Gemini model (e.g. Flash / Pro) for each AI feature independently — balancing cost and accuracy
 - Editable AI prompts for every module (examiner, portrait, report, chatbot) — no code changes needed
 - Candidate portal with AI portrait generation and comparison
 
