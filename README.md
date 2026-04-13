@@ -190,3 +190,17 @@ Most visited pages: `/learn` (292), `/` (288), `/leaderboard` (144), `/admin` (9
 - 📐 [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — System structure, module breakdown, and AI integration flow
 - 👥 [`docs/USER_ROLES.md`](./docs/USER_ROLES.md) — Role permissions and access logic
 - 🤖 [`docs/AI_FEATURES.md`](./docs/AI_FEATURES.md) — Detailed description of all AI features, prompts, and model configuration
+
+
+---
+
+### 👤 Author
+
+**Gulnaz Bakinova**
+
+*AI Automation & Applied AI Engineer · End-to-end automation for sales / support / ops*
+
+Let's connect!
+[LinkedIn](https://www.linkedin.com/in/gulnaz-bakinova/) 
+
+*This repository is provided for portfolio and demonstration purposes only*
