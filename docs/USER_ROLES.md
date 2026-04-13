@@ -80,6 +80,6 @@ Full access to all system functionality.
 - Access the Candidate portal: view AI portraits, compare candidates side by side and print the report in PDF
 - Edit AI prompts for all features (Examiner, Portrait, Report, Chatbot)
 - Roll back any prompt to a previous version
-- Switch Gemini model (Flash / Pro) per AI feature independently
+- Switch Gemini model (Flash / Pro) or GPT-5 model per AI feature independently
 - Upload and update the HR Chatbot knowledge base (.docx)
 - View platform analytics
