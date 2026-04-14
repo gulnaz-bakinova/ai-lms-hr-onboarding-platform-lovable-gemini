@@ -2,7 +2,7 @@
 
 *🇷🇺 [Русская версия](README.ru.md)*
 
-> Live in production at **Seventy Company** — a 4-location coffee shop chain in Almaty, Kazakhstan.  
+> Live in production at **Seventy Company** — a 4-location coffee shop chain and a barista school in Almaty, Kazakhstan.  
 > An AI-powered LMS for staff onboarding, built with Lovable and Gemini.  
 > **22 employees trained**, including current baristas, new hires, and candidates.
 
