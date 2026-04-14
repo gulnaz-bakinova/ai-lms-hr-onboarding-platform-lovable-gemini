@@ -32,7 +32,7 @@ Previously, all theory was explained offline by managers individually for each n
 
 ## How It Works
 
-1. **New candidate** — receives access to the values test only and AI personality profile
+1. **New candidate** — receives access to the values test and AI personality profile
 2. **Candidate profiling** — 25 questions answered in the app
 3. **AI Candidate Portrait** — Gemini generates a full psychometric profile with archetype, SWOT, cultural fit %, and role recommendations for management
 4. **Access granted** — candidate becomes an intern and gets access to the full LMS
@@ -59,25 +59,17 @@ Previously, all theory was explained offline by managers individually for each n
 
 ### 📚 Structured Learning Flow
 - 3 courses: Company Rules, Product Theory, Recipes
-- Content includes both text and images, delivered in a stories-style format (swipeable cards)
-- Content is copy-protected — students cannot copy lesson text
-- Tests and exams unlock only after the student completes all theory in the current module
+- Content delivered in a stories-style format (swipeable cards); copy-protected
 - Sequential unlock: next topic opens only after passing current test/exam
 - XP points awarded for every completed lesson and passed assessment
 
 ### 🤖 AI Examiner (Gemini)
-- Open-ended exam questions graded by Gemini
-- Minimum 300 characters required; paste disabled to prevent copying
+- Open-ended exam questions graded by Gemini; minimum 300 characters, paste disabled
 - AI provides instant feedback: score + what was missed + what to improve
-- Bilingual support: students can write in Russian or Kazakh (or both); AI detects the language and responds in the same language
-- Up to 3 attempts per exam; after 3 failed attempts, a 24-hour cooldown is applied — encourages students to go back and review the theory before retrying
-- Full history saved for reviewing mistakes: student answer + AI feedback — visible to both student and admin
-
-### ☕ Recipe Exams
-- Interactive ingredient-selection format (tap to pick)
-- Student specifies ingredients + volume per drink
-- AI checks correctness and explains mistakes
-- Top-5 weakest drinks tracked per student
+- Bilingual support: Russian or Kazakh — AI detects language and responds in kind
+- Up to 3 attempts per exam; 24h cooldown after 3 failed attempts
+- Recipe exams use interactive ingredient-selection format; AI checks correctness and tracks top-5 weakest drinks per student
+- Full answer + feedback history saved — visible to both student and admin
 
 ### 👤 AI Candidate Portrait (Gemini)
 - Candidates complete a 25-question values test
@@ -105,17 +97,14 @@ Previously, all theory was explained offline by managers individually for each n
 - Mastery Path — 5 progression levels tied to course completion (Green Bean → Tamper → Holder → Master → Espresso God)
 
 ### 💬 AI HR Chatbot
-- Available in employee profile
-- Answers questions about company rules, culture, processes
+- Answers questions about company rules, culture, and processes
 - Powered by Gemini with a custom knowledge base (.docx uploaded via admin)
 - Quick question suggestions configurable by admin
 
 ### 🛠 Admin Panel
-- Full content management: courses, modules, lessons, quizzes
-- Employee management: progress, exam history, XP, access control
-- Configurable AI model per module: admin can switch Gemini model (e.g. Flash / Pro) for each AI feature independently — balancing cost and accuracy
-- Editable AI prompts for every module (examiner, portrait, report, chatbot) — no code changes needed
-- Candidate portal with AI portrait generation and comparison
+- Full content and employee management
+- Editable AI prompts per module — no code changes needed; full version history with rollback
+- Configurable Gemini model (Flash / Pro) per AI feature independently
 
 ---
 
@@ -127,9 +116,10 @@ The system uses separate Gemini prompts for each AI feature, all editable by adm
 - **AI Portrait** — generates psychometric candidate profile from test results
 - **AI Report** — analyzes learning data and produces HR recommendations
 - **AI HR Chatbot** — answers company-specific questions based on uploaded knowledge base
-- **Prompt Version History** — every time a prompt is edited in the admin panel, the previous version is saved automatically; admins can roll back to any previous version at any time
+- **Prompt Version History** — every prompt edit is auto-saved; admins can roll back to any previous version at any time
 
-See [`prompts/ai_examiner_example.md`](./prompts/ai_examiner_example.md) for a prompt structure example.
+See [`prompts/ai_examiner_example.md`](./prompts/ai_examiner_example.md) for an AI Examiner prompt structure example.  
+See [`prompts/ai_portrait_prompt_template.md`](./prompts/ai_portrait_prompt_template.md) for an AI Portrait prompt structure example.
 
 ---
 
@@ -191,7 +181,7 @@ Most visited pages: `/learn` (292), `/` (288), `/leaderboard` (144), `/admin` (9
 - 📐 [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — System structure, module breakdown, and AI integration flow
 - 👥 [`docs/USER_ROLES.md`](./docs/USER_ROLES.md) — Role permissions and access logic
 - 🤖 [`docs/AI_FEATURES.md`](./docs/AI_FEATURES.md) — Detailed description of all AI features, prompts, and model configuration
-
+- 🛠 [`docs/TECH_STACK.md`](./docs/TECH_STACK.md) — Full technology stack with architecture diagram
 
 ---
 
