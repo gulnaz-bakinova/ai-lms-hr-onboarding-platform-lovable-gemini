@@ -4,7 +4,7 @@
 
 > Live in production at **Seventy Company** — a 4-location coffee shop chain in Almaty, Kazakhstan.  
 > An AI-powered LMS for staff onboarding, built with Lovable and Gemini.  
-> **22 employees trained**, including current baristas, new hires, and management candidates.
+> **22 employees trained**, including current baristas, new hires, and candidates.
 
 ![Lovable](https://img.shields.io/badge/Lovable-Built%20with%20Lovable-7C3AED?style=flat)
 ![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4?style=flat&logo=google)
@@ -34,14 +34,14 @@ Previously, all theory was explained offline by managers individually for each n
 
 ## How It Works
 
-1. **New candidate** — receives access to the values test and AI personality profile
+1. **New candidate** — receives access to the assessment test; based on the results, an AI personality profile is automatically generated
 2. **Candidate profiling** — 25 questions answered in the app
 3. **AI Candidate Portrait** — Gemini generates a full psychometric profile with archetype, SWOT, cultural fit %, and role recommendations for management
-4. **Access granted** — candidate becomes an intern and gets access to the full LMS
-5. **Theory** — structured lessons across 3 courses, delivered in swipeable stories format
+4. **Access granted** — if the candidate is a good fit based on the test results, management unlocks full LMS access and they become an intern
+5. **Theory** — structured lessons across 3 courses
 6. **Tests & Exams** — quizzes unlock after theory; open-ended exams graded by AI in real time
 7. **Next module** — unlocks only after passing current exam; 24h cooldown on failed attempts
-8. **AI Learning Report** — after completing all modules, admin generates a full AI analysis: strengths, weak zones, exam history with results, recommendations
+8. **AI Learning Report** — at any point during the training, an administrator can generate a full analysis of the intern: strengths, weak areas, exam history, and recommendations
 9. **Hiring decision** — management uses the portrait + report together to decide role, position, and growth path
 
 ---
@@ -50,7 +50,7 @@ Previously, all theory was explained offline by managers individually for each n
 
 | Role | Access |
 |---|---|
-| **Candidate** | Values test and candidate profile creation only — nothing else is visible |
+| **Candidate** | Assessment test only (used to generate an AI profile) — everything else is inaccessible |
 | **Barista (Intern)** | Full LMS access (all courses, leaderboard, own profile) — learning only, with a default 1-month access period aligned with the course duration |
 | **External Learner** | One course only (Product Theory), own results, auto-expires in 7 days |
 | **Admin** | Everything: content management, employee management, AI reports, candidate portal, analytics, prompt editor |
@@ -71,10 +71,10 @@ Previously, all theory was explained offline by managers individually for each n
 - Bilingual support: Russian or Kazakh — AI detects language and responds in kind
 - Up to 3 attempts per exam; 24h cooldown after 3 failed attempts
 - Recipe exams use interactive ingredient-selection format; AI checks correctness and tracks top-5 weakest drinks per student
-- Full answer + feedback history saved — visible to both student and admin
+- The full history of the intern's answers and AI feedback is saved — visible to both the intern and the administrator
 
 ### 👤 AI Candidate Portrait (Gemini)
-- Candidates complete a 25-question values test
+- Candidates complete a 25-question test
 - Gemini generates a full psychometric report:
   - Archetype (Operator / Master / Mentor / Architect)
   - Psychometrics across 10 scales
@@ -87,7 +87,7 @@ Previously, all theory was explained offline by managers individually for each n
 - Side-by-side comparison of multiple candidates
 
 ### 📊 AI Learning Report (Gemini)
-- Admin triggers report generation per employee
+- The administrator can generate a report on each employee at any stage of the training
 - AI analyzes: lessons completed, quiz accuracy, exam scores, weak spots
 - Output: overall assessment + strengths + risk zones + recommendations
 - Report history saved with timestamps
@@ -99,14 +99,14 @@ Previously, all theory was explained offline by managers individually for each n
 - Mastery Path — 5 progression levels tied to course completion (Green Bean → Tamper → Holder → Master → Espresso God)
 
 ### 💬 AI HR Chatbot
-- Answers questions about company rules, culture, and processes
+- Answers questions about company policies, culture, and internal processes
 - Powered by Gemini with a custom knowledge base (.docx uploaded via admin)
-- Quick question suggestions configurable by admin
+- FAQ responses are configured by the administrator
 
 ### 🛠 Admin Panel
 - Full content and employee management
-- Editable AI prompts per module — no code changes needed; full version history with rollback
-- Configurable Gemini model (Flash / Pro) per AI feature independently
+- Editable AI prompts per module — full version history is saved after every edit, with the ability to restore any previous version
+- Configurable Gemini model (Flash / Pro) or GPT per AI feature independently
 
 ---
 
@@ -118,7 +118,6 @@ The system uses separate Gemini prompts for each AI feature, all editable by adm
 - **AI Portrait** — generates psychometric candidate profile from test results
 - **AI Report** — analyzes learning data and produces HR recommendations
 - **AI HR Chatbot** — answers company-specific questions based on uploaded knowledge base
-- **Prompt Version History** — every prompt edit is auto-saved; admins can roll back to any previous version at any time
 
 See [`prompts/ai_examiner_prompt.md`](./prompts/ai_examiner_prompt.md) for an AI Examiner prompt structure example.  
 See [`prompts/ai_portrait_prompt_template.md`](./prompts/ai_portrait_prompt_template.md) for an AI Portrait prompt structure example.
