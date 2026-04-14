@@ -112,11 +112,11 @@ Previously, all theory was explained offline by managers individually for each n
 
 ## AI Prompts
 
-The system uses separate Gemini prompts for each AI feature, all editable by admin without code changes:
+The system uses separate Gemini prompts for each AI function, all editable directly in the admin panel without any code changes:
 
-- **AI Examiner** — evaluates open-ended answers, gives pedagogical feedback in student's language
+- **AI Examiner** — evaluates answers, gives pedagogical feedback in student's language
 - **AI Portrait** — generates psychometric candidate profile from test results
-- **AI Report** — analyzes learning data and produces HR recommendations
+- **AI Report** — analyzes learning results and produces HR recommendations
 - **AI HR Chatbot** — answers company-specific questions based on uploaded knowledge base
 
 See [`prompts/ai_examiner_prompt.md`](./prompts/ai_examiner_prompt.md) for an AI Examiner prompt structure example.  
@@ -127,14 +127,14 @@ See [`prompts/ai_portrait_prompt_template.md`](./prompts/ai_portrait_prompt_temp
 ## Business Impact
 
 **Before this system, onboarding at Seventy Company was fully manual:**
-- Theory was explained offline by managers, individually for every new hire
+- Theory was explained offline by managers, individually for every new candidate
 - There was no reliable way to verify knowledge retention before moving to hands-on practice
 - Assessing employee potential and deciding on role fit required trial and error
 
 **Now:**
 - Interns arrive at practical training with verified theoretical knowledge
 - Management sees exactly where each person struggled and what they know well
-- Hiring and promotion decisions are backed by AI-generated psychometric data, not gut feeling
+- Hiring and promotion decisions are backed by psychometric AI data and AI-generated reports from exam results — not gut feeling
 
 ---
 
@@ -149,7 +149,6 @@ Tracked via Lovable Analytics (last 90 days):
 | Views per visit | 8.77 |
 | Avg. session duration | 7m 29s |
 | Bounce rate | 34% |
-| Primary country | Kazakhstan (530 of 540 visitors) |
 | Device split | 81.9% mobile / 18.1% desktop |
 
 Most visited pages: `/learn` (292), `/` (288), `/leaderboard` (144), `/admin` (98)
