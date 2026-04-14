@@ -12,6 +12,7 @@ The platform is built on Lovable (React-based visual development environment) wi
 |---|---|
 | **React** | UI framework (generated and managed via Lovable) |
 | **Lovable** | Visual development environment — component building, deployment |
+| **Git sync enabled** | Full commit history maintained on client's GitHub account |
 | **Tailwind CSS** | Styling |
 | **shadcn/ui** | UI component library |
 
