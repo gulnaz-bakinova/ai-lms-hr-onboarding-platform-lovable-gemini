@@ -1,5 +1,7 @@
 # 🎓 AI-Powered LMS for Coffee Business Onboarding
 
+*🇷🇺 [Русская версия](README.ru.md)*
+
 > Live in production at **Seventy Company** — a 4-location coffee shop chain in Almaty, Kazakhstan.  
 > An AI-powered LMS for staff onboarding, built with Lovable and Gemini.  
 > **22 employees trained**, including current baristas, new hires, and management candidates.
@@ -118,7 +120,7 @@ The system uses separate Gemini prompts for each AI feature, all editable by adm
 - **AI HR Chatbot** — answers company-specific questions based on uploaded knowledge base
 - **Prompt Version History** — every prompt edit is auto-saved; admins can roll back to any previous version at any time
 
-See [`prompts/ai_examiner_example.md`](./prompts/ai_examiner_example.md) for an AI Examiner prompt structure example.  
+See [`prompts/ai_examiner_prompt.md`](./prompts/ai_examiner_prompt.md) for an AI Examiner prompt structure example.  
 See [`prompts/ai_portrait_prompt_template.md`](./prompts/ai_portrait_prompt_template.md) for an AI Portrait prompt structure example.
 
 ---
@@ -182,6 +184,7 @@ Most visited pages: `/learn` (292), `/` (288), `/leaderboard` (144), `/admin` (9
 - 👥 [`docs/USER_ROLES.md`](./docs/USER_ROLES.md) — Role permissions and access logic
 - 🤖 [`docs/AI_FEATURES.md`](./docs/AI_FEATURES.md) — Detailed description of all AI features, prompts, and model configuration
 - 🛠 [`docs/TECH_STACK.md`](./docs/TECH_STACK.md) — Full technology stack with architecture diagram
+- 🖼 [`assets/`](./assets/) — UI screenshots (all personal data masked)
 
 ---
 
